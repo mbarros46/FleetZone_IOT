@@ -92,8 +92,6 @@ Baixe ou confirme que o arquivo yolov8n.pt está na raiz do projeto
 
 Execute um dos scripts de detecção conforme explicado acima
 
-Para testar com sua webcam, use --source 0 como argumento
-
 📁 Estrutura do Projeto
 Copiar
 fleetzone/

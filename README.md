@@ -111,19 +111,13 @@ fleetzone/
 └── video_pitch_link.txt
 📹 Pitch Técnico
 🔗 Link para o pitch técnico no YouTube (modo não listado):
-https://youtu.be/seu-video-real-aqui
+https://yout
 
-👥 Integrantes do Grupo
-Pedro Valentim Merise
+👥 Integrantes do Grupo:
 
-Miguel Barros Ramos
+Pedro Valentim Merise Rm 556826
 
-📞 Contato
-Para dúvidas, sugestões ou colaborações, entre em contato:
-
-Pedro: pedro.email@example.com
-
-Miguel: miguel.email@example.com
+Miguel Barros Ramos Rm556652
 
 📝 Licença
 Este projeto está licenciado sob a licença MIT — veja o arquivo LICENSE para detalhes.

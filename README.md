@@ -79,5 +79,5 @@ fleetzone/
 ---
 
 ## 👥 Integrantes do Grupo
-- Pedro Valendim Merisi
+- Pedro Valendim Merise
 - Miguel Barros Ramos

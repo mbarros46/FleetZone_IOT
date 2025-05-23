@@ -1,4 +1,3 @@
-
 import numpy as np
 from filterpy.kalman import KalmanFilter
 
@@ -17,7 +16,8 @@ class Sort:
         ret = []
 
         for t, trk in enumerate(trks):
-            pos = self.trackers[t].predict()[0]
+            pos = self.trackers[t].predict()
+            pos = pos[:4].reshape(-1)  # garante vetor 1D com 4 elementos
             trk[:] = [pos[0], pos[1], pos[2], pos[3], 0]
             if np.any(np.isnan(pos)):
                 to_del.append(t)
@@ -37,9 +37,9 @@ class Sort:
 
         i = len(self.trackers)
         for trk in reversed(self.trackers):
-            d = trk.get_state()[0]
+            d = trk.get_state()
             if trk.time_since_update < 1:
-                ret.append(np.concatenate((d, [trk.id + 1])).reshape(1, -1))
+                ret.append(np.concatenate((d[:4].reshape(-1), [trk.id + 1])).reshape(1, -1))
             i -= 1
             if trk.time_since_update > self.max_age:
                 self.trackers.pop(i)
@@ -128,7 +128,7 @@ class KalmanBoxTracker:
             self.hit_streak = 0
         self.time_since_update += 1
         self.history.append(self.kf.x)
-        return self.history[-1]
+        return self.kf.x
 
     def get_state(self):
         return self.kf.x

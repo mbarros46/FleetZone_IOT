@@ -1,7 +1,6 @@
 
 # 🛵 FleetZone - Gestão Inteligente de Pátios com Visão Computacional
 
-
 ## 🎯 Objetivo do Projeto
 Automatizar o monitoramento e controle de motos no pátio da Mottu utilizando **Visão Computacional** com **Python**, **OpenCV** e **YOLOv8**, proporcionando eficiência, baixo custo e escalabilidade para múltiplas filiais.
 
